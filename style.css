@@ -1,0 +1,77 @@
+/* Reset standardmarginaler och padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Centrera sidans innehåll */
+body {
+  background-color: gray;
+  text-align: center; /* Centrera innehåll horisontellt */
+}
+
+/* Styla rubriken */
+h1 {
+  margin-bottom: 20px;
+  color: rgb(0, 61, 4);
+}
+
+/* Styla behållaren för trafikljusen */
+.box {
+  background-color: white;
+  display: inline-block; /* Använd inline-block för att centrerad vertikalt */
+  padding: 0px 10px; /* För att bestämma måttet på den vita ramen*/
+}
+
+/* Styla trafikljusen */
+.red,
+.yellow,
+.green {
+  width: 100px;
+  height: 100px;
+  margin: 10px auto; /* Centrera horisontellt */
+  border: 5px solid;
+  position: relative;
+}
+
+.red {
+  background-color: red;
+  border-color: rgb(149, 1, 1);
+}
+
+.yellow {
+  background-color: yellow;
+  border-color: rgb(118, 118, 1);
+}
+
+.green {
+  background-color: green;
+  border-color: rgb(0, 82, 0);
+}
+
+/* Styla boxarna i trafikljusen*/
+.boxred,
+.boxyellow,
+.boxgreen {
+  width: 50%;
+  height: 50%;
+  bottom: 0px;
+  position: absolute;
+}
+.boxred {
+  width: 100%;
+  background-color: rgba(
+    233,
+    158,
+    158,
+    0.5
+  ); /* ljusare ton av respektive färg */
+}
+.boxyellow {
+  right: 0px;
+  background-color: rgb(244, 244, 172); /* ljusare ton av respektive färg */
+}
+.boxgreen {
+  background-color: rgb(124, 187, 124); /* ljusare ton av respektive färg */
+}
